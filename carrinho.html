@@ -243,39 +243,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- JavaScript Bundle with Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   <script type="text/javascript">
-  dataLayer.push({
-    'pageCategory': 'cart',
-    'visitorType': 'new customer'
-  });
-  dataLayer.push({ ecommerce: null });  
-  dataLayer.push({
-    'event':'begin_checkout',
-    'userId':'null',
-    'pageCategory':'cart',
-    'pageTitle':'Carrinho Teste',  
-    'visitorType':'new customer',
-    'currencyCode': 'BRL',  
-    'value':'15.00',
-    'ecommerce': {   
-      'items': [
-       {
-         'item_name': 'Free',
-         'item_id': '123',
-         'price': '0.00',
-         'item_brand': 'teste',
-         'item_category': 'lorem',
-         'quantity': 1
-       },
-       {
-         'item_name': 'Pro',
-         'item_id': '321',
-         'price': '15.00',
-         'item_brand': 'teste',
-         'item_category': 'lorem',
-         'quantity': 1
-       }]
-  }
-  });
+    $(document).ready(function(){
+      dataLayer.push({
+        'pageCategory': 'cart',
+        'visitorType': 'new customer'
+      });
+      dataLayer.push({ ecommerce: null });  
+      dataLayer.push({
+        'event':'begin_checkout',
+        'userId':'null',
+        'pageCategory':'cart',
+        'pageTitle':'Carrinho Teste',  
+        'visitorType':'new customer',
+        'currencyCode': 'BRL',  
+        'value':'15.00',
+        'ecommerce': {   
+          'items': [
+           {
+             'item_name': 'Free',
+             'item_id': '123',
+             'price': '0.00',
+             'item_brand': 'teste',
+             'item_category': 'lorem',
+             'quantity': 1
+           },
+           {
+             'item_name': 'Pro',
+             'item_id': '321',
+             'price': '15.00',
+             'item_brand': 'teste',
+             'item_category': 'lorem',
+             'quantity': 1
+           }]
+      }
+      });
+    });
+  
   </script>
 </body>
 </html>
