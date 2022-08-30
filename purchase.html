@@ -36,6 +36,57 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<!-- JavaScript Bundle with Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+	<script>
+	dataLayer.push({
+		'pageCategory': 'purchase',
+		'visitorType': 'new customer'
+	});
+	dataLayer.push({ ecommerce: null });
+	dataLayer.push({
+	  'event': 'purchase',
+	  'userId':'1',
+	  'pageCategory':'purchase',
+	  'pageTitle':'Compra Teste',  
+	  'visitorType':'new user',
+	  'transaction_id': '001',
+	  'coupon': 'COMPRATESTE10',
+	  'tax': '0.00',
+	  'shipping':'0.00',
+	  'affiliation': 'Ecommerce Teste',
+	  'new_customer':'true',
+	  'payment_method':'credit card',
+	  'customer':{
+	      'email':'teste@teste.com',
+	      'first_name':'william',
+	      'last_name':'ferreira',
+	      'address_1':'oswaldo meuci',
+	      'address_2':'ap 31',
+	      'state':'SP',
+	      'postcode':'15025-440',
+	      'country':'BR',
+	  },
+	  'ecommerce': {
+	      'currency': 'BRL',
+	      'value': '44.00',
+	      'items': [{
+	        'item_name': 'Pro',
+	        'item_id': 123,
+	        'price': 15.00,
+	        'item_brand': 'teste',
+	        'item_category': 'lorem',
+	        'quantity': '1'
+	      }, {
+	        'item_name': 'Enterprise',
+	        'item_id': '231',
+	        'price': '29.00',
+	        'item_brand': 'teste',
+	        'item_category': 'lorem',
+	        'quantity': '1'
+	      }]
+	  }
+	});
+	</script>
 </body>
 </html>
 
